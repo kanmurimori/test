@@ -1,0 +1,301 @@
+<!doctype html> 
+<html lang="ja"> 
+	<head> 
+<!--meta-->
+		<meta charset="utf-8" /> 
+		<meta name="theme-color" content="pink" /> 
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no " /> 
+<!--MDUI 0.4.1 CSS--> 
+		<link rel="stylesheet" href="https://cdnjs.loli.net/ajax/libs/mdui/0.4.1/css/mdui.min.css"> 
+<!--MDUI 0.4.1 JavaScript--> 
+		<script src="https://cdnjs.loli.net/ajax/libs/mdui/0.4.1/js/mdui.min.js"></script> 
+<!--MathJax 2.7.4 JavaScript-->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-MML-AM_CHTML" async></script> 
+<!--MDUI CSS 改--> 
+		<style>
+			.mdui-table th,.mdui-table td {padding:1px 1px;} 
+			.mdui-table th:last-child,.mdui-table td:last-child {padding-right:0px} 
+			.mdui-table th:first-child,.mdui-table td:first-child {padding-right:0px; padding-left:24px} 
+			.mdui-table th:nth-child(2),.mdui-table td:nth-child(2) {padding-left:0px} 
+		</style>				
+<!--UI style--> 
+		<style>@font-face {font-family:太行書体; src:url("https://封raw.githubusercontent.com/kanmurimori/test/master/太行書体.ttf")} 
+			.f-gyo {font-family:太行書体}</style> 
+		<style>@font-face {font-family:モトヤLマルベリ３等幅; src:url("https://raw.githubusercontent.com/kanmurimori/test/master/MTLmr3m.ttf")}
+			.f-jap {font-family:モトヤLマルベリ３等幅}</style> 
+		<style>@font-face {font-family:Bauhaus_ITC; src:url("https://封raw.githubusercontent.com/kanmurimori/test/master/Bauhaus ITC.ttf")}
+			.f-eng {font-family:Bauhaus_ITC}</style> 
+		<style>
+			.t-momo {color:#F596AA} .b-momo {background-color:#F596AA} 
+			.t-sakura {color:#FEDFE1} .b-sakura {background-color:#FEDFE1} 
+			.t-kurenai {color:#CB1B45} .b-kurenai {background-color:#CB1B45} 
+			.t-shiro {color:#FFFFFF} .b-shiro {background-color:#FFFFFF} 
+			.t-kuro {color:#000000} .b-kuro {background-color:#000000} 
+		</style>
+<!--title-->
+		<title>あるｋのスペース</title> 
+	</head> 
+<!--色-->
+	<body class="mdui-theme-primary-pink mdui-theme-accent-cyan f-jap"> 
+<!--app&tool bar--> 
+		<div class="mdui-appbar-with-toolbar"> 
+		<div class="mdui-appbar mdui-appbar-fixed mdui-appbar-scroll-hide"> 
+		<div class="mdui-toolbar mdui-color-pink mdui-shadow-5"> 
+			<a href="javascript:;" class="mdui-btn mdui-btn-icon" mdui-drawer="{target: '#left-drawer'}"><i class="mdui-icon material-icons">menu</i></a> 
+				<span class="mdui-typo-title">あるｋのスペース</span> 
+				<div class="mdui-toolbar-spacer"></div>
+            <a href="javascript:;" class="mdui-btn mdui-btn-icon"><i class="mdui-icon material-icons">more_vert</i></a> 
+		</div> </div> </div>
+<!--drawer--> 
+		<a class="mdui-drawer-body-right"></a>
+			<div class="mdui-drawer" id="left-drawer"> 
+				...
+			</div> 
+<!--fab--> 
+		<button class="mdui-fab mdui-ripple mdui-fab-fixed"><i class="mdui-icon material-icons">add</i></button> 
+<!--布局容器--> 
+			<div class="mdui-container"> 
+<!--正題-->  
+<hr/>
+<!--主題・日本語略述-->
+<h1 name:"nihongo">日本語略述</h1>
+	<p class="mdui-text-right">あなたは今どこで何をしていますか？</p> 
+	<select class="mdui-select" mdui-select onchange="window.location=this.value"> 
+		<option value="#koe">Ⅰ　声</option> 
+		<option value="O2">State 2</option> 
+		<option value="O3">State 3</option> 
+		<option value="O4">State 4</option> 
+		<option value="O5">State 5</option> 
+		<option value="O6">State 6</option> 
+	</select>　　<select class="mdui-select" mdui-select onchange="window.location=this.value"> 
+		<option value="#ji">Ⅱ　字</option> 
+		<option value="#kana">α　仮名</option> 
+		<option value="O3">State 3</option> 
+		<option value="O4">State 4</option> 
+		<option value="O5">State 5</option> 
+	<option value="O6">State 6</option> 
+	</select> <br/> <select class="mdui-select" mdui-select onchange="window.location=this.value"> 
+		<option value="#shi">Ⅲ　詞</option> 
+		<option value="hinshi">α　品詞</option>
+		<option value="O3">State 3</option> 
+		<option value="O4">State 4</option> 
+		<option value="O5">State 5</option> 
+		<option value="O6">State 6</option> 
+	</select> 　<select class="mdui-select" mdui-select onchange="window.location=this.value"> 
+		<option value="#bun">Ⅳ　文</option> 
+		<option value="O2">State 2</option> 
+		<option value="O3">State 3</option> 
+		<option value="O4">State 4</option> 
+		<option value="O5">State 5</option> 
+		<option value="O6">State 6</option> 
+	</select> 
+
+<h1 name="ji" class="mdui-text-center mdui-text-color-blue">文字</h1> 
+	<p style="font-size:12px"> 
+	　　<ruby><rb>文字</rb><rt>もじ</rt></ruby>是全体社会成員用来表示語音的符号体系、可以克服語音在時間和空間的局限性。<br/><br/> 
+	　　　　　┏表意文字　・・・・・・・・・・　漢字<br/>
+	日本語文字┫　　　　┏音節文字　・・・・・　仮名<br/>
+	　　　　　┗表音文字┫<br/>
+	　　　　　　　　　　┗音素文字　・・・・・　ﾛｰﾏ字<br/>
+	</p>
+	<h2 name="kana">仮名</h2>
+		　　<ruby><rb><b>仮名</b></rb><rt>かな</rt></ruby>是日本語文字表記之一、這裏有２種分類方式→Ⅱ「<del><ruby><rb>原生仮名</rb><rt>五十音</rt></ruby>・<ruby><rb>派生仮名</rb><rt>五十音以外</rt></ruby></del><sup>臆</sup>」、其中原生仮名来源於五十音内文字、見下表。
+        <table class="mdui-table mdui-hoverable">
+            <tr> 
+                <th>　＃　</th> 
+                <th>ア段　</th> 
+                <th>イ段　</th> 
+                <th>ウ段　</th> 
+                <th>エ段　</th> 
+                <th>オ段　</th>
+            </tr><tr> 
+                <th>ア行</th>
+                <td>あア</td>
+                <td>いイ</td> 
+                <td>うウ</td> 
+                <td>えエ</td> 
+                <td>おオ</td>
+            </tr><tr> 
+                <th>カ行</th> 
+                <td>かカ</td> 
+                <td>きキ</td> 
+                <td>くク</td> 
+                <td>けケ</td> 
+                <td>こコ</td> 
+            </tr><tr> 
+                <th>サ行</th> 
+                <td>さサ</td> 
+                <td>しシ</td> 
+                <td>すス</td> 
+                <td>せセ</td>
+                <td>そソ</td> 
+            </tr><tr> 
+                <th>タ行</th> 
+                <td>たタ</td> 
+                <td>ちチ</td> 
+                <td>つツ</td> 
+                <td>てテ</td> 
+                <td>とト</td> 
+            </tr><tr> 
+                <th>ナ行</th> 
+                <td>なナ</td> 
+                <td>にニ</td> 
+                <td>ぬヌ</td> 
+                <td>ねネ</td> 
+                <td>のノ</td> 
+            </tr><tr> 
+                <th>ハ行</th> 
+                <td>はハ</td> 
+                <td>ひヒ</td> 
+                <td>ふフ</td> 
+                <td>へヘ</td> 
+                <td>ほホ</td> 
+            </tr><tr> 
+                <th>マ行</th> 
+                <td>まマ</td> 
+                <td>みミ</td> 
+                <td>むム</td> 
+                <td>めメ</td>
+                <td>もモ</td> 
+            </tr><tr> 
+                <th>ヤ行</th> 
+                <td>やヤ</td> 
+                <td></td> 
+                <td>ゆユ</td> 
+                <td></td> 
+                <td>よヨ</td> 
+            </tr><tr> 
+                <th>ラ行</th> 
+                <td>らラ</td> 
+                <td>りリ</td> 
+                <td>るル</td> 
+                <td>れレ</td> 
+                <td>ろロ</td> 
+            </tr><tr> 
+                <th>ワ行</th> 
+                <td>わワ</td> 
+                <td></td> 
+                <td></td> 
+                <td></td> 
+                <td>をヲ</td> 
+            </tr> 
+        </table> 
+	<div class="mdui-text-color-black-secondary">　　　　Ⅱα TAB-01　五十音図・縱</div> 
+　　上表以5*10規格縱向排版、其中表内本体<a href="#itable"><sup>*</sup></a>所有的値為<ruby><rb><b>五十音</b></rb><rt>ごじゅうおん</rt></ruby>、這個表称為<ruby><rb>五十音図</rb><rt>ごじゅうおんず</rt></ruby>。表中的属性称為<ruby><rb><b>段</b></rb><rt>だん</rt></ruby>、組称為<ruby><rb><b>行</b></rb><rt>ぎょう</rt></ruby>不過如果是按照10*5規格横向排版（伝統排版）的話属性就是行、組就是段了、總之就是五段十行。<br/>
+　　表中有５処<ruby><rb>∅</rb><rt>φι</rt></ruby>値、在歴使仮名遣い中５処∅値分別為ヤ行い（𛀆<del>以</del>）ヤ行え（𛀁<del>江</del>）ワ行い（ゐヰ）ワ行う（<del>㐵于</del>）ワ行え（ゑヱ）。這些仮名在口語中一般不使用、在一些規律上会使用∅値的ア行仮名来替代、比如ゐ的替代就是い。<br/>
+　　表中的毎個値都会有２個文字、其中左為<ruby><rb><b>平仮名</b></rb><rt>ひらがな</rt></ruby>右為<ruby><rb><b>片仮名</b></rb><rt>カタカナ</rt></ruby>、這就是按照Ⅰ「平仮名・片仮名」来将仮名分類。<br/>平片仮名之間都是有対応的、而且是一対一対応。
+　　派生仮名中共７個分類。一、<ruby><rb><b>濁音</b></rb><rt>だくおん</rt></ruby>・<ruby><rb><b>半濁音</b></rb><rt>はんだくおん</rt></ruby>這２個是将原生仮名和2種符号附着派生的仮名。二、<ruby><rb><b>拗音</b></rb><rt>ようおん</rt></ruby>・<ruby><rb><b>外来語</b></rb><rt>がいらいご</rt></ruby>這個是仮名与捨て仮名複合派生的仮名。三、<ruby><rb><b>促音</b></rb><rt>そくおん</rt></ruby>・<ruby><rb><b>撥音</b></rb><rt>はつおん</rt></ruby>・<ruby><rb><b>長音</b></rb><rt>ちょうおん</rt></ruby>這３個是用作発音記号的仮名。<br/> 
+　　仮名是通過<ruby><rb>借字</rb><rt>しゃくじ</rt></ruby>生成的（取形不取意）、其中平仮名是極度草書体的漢字来的、片仮名是取楷書体漢字的一部来的。下表是一些仮名的漢字変化（歴史的事都不好説、仮名来源也是不確定的、所以這表只是衆論之一）。<br/> 
+	<img src="https://upload.wikimedia.org/wikipedia/commons/7/7a/Hiragana_origin.svg" class="mdui-center mdui-hoverable" /> 
+	<div class="mdui-text-center mdui-text-color-black-secondary">Ⅱα IMG-01　平仮名歴史変化・横</div> 
+	<img src="https://upload.wikimedia.org/wikipedia/commons/0/0c/Katakana_origine.svg" weight=295 height=288 class="mdui-center mdui-hoverable" /> 
+	<div class="mdui-text-center mdui-text-color-black-secondary">Ⅱα IMG-02　片仮名歴史変化・縱</div> 
+　　将部分仮名大小縮小到原来的¼到右下方可生成<ruby><rb>捨て仮名</rb><rt>す　がな</rt></ruby>。
+	<table class="mdui-table mdui-hoverable"> 
+		<tr>
+			<td>ぁァ</td>
+			<td>ぃィ</td> 
+			<td>ぅゥ</td> 
+			<td>ぇェ</td> 
+			<td>ぉォ</td> 
+		</tr><tr>
+			<td>　ヵ</td>
+			<td></td> 
+			<td></td>
+			<td>　ヶ</td>
+			<td></td>
+		</tr><tr>
+			<td></td>
+			<td></td>
+			<td>っッ</td>
+			<td></td>
+			<td></td>
+		</tr><tr>
+			<td>ゃャ</td>
+			<td></td> 
+			<td>ゅュ</td> 
+			<td></td> 
+			<td>ょョ</td> 
+		</tr><tr>
+			<td>ゎヮ</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+	</table> 
+		<div class="mdui-text-color-black-secondary">Ⅱα TAB-02　捨て仮名</div> 
+　　上表就是一般会使用到的捨て仮名、還有一部分是部分其他語言用的捨て仮名、這里就不再列出（自行翻Unicode）。<br/> 
+　　「ぁぃぅぇぉ」一般用作長音表現、其片仮名常与仮名複合派生外来語。<br/>
+　　「ヵヶ」中ヵ是<ruby><rb>箇</rb><rt>か</rt></ruby>的音読み、ヶ是箇的竹(ケ)部的略字、因為習慣問題用捨て仮名的様式、這2個字一般是用作助数詞比如１ヵ月（１ヶ月）、不過ヵ和ヶ応該当漢字箇来看、所以読音都是カ。有個古地名<a href="https://ja.m.wikipedia.org/wiki/関ケ原町"><ruby><rb>関ヶ原</rb><rt>せきがはら</rt></ruby></a>這裏要読ガ。<br/>
+　　「っ」及其片仮名是声音記号促音。<br/>
+　　「ゃゅょゎ」与仮名複合派生拗音和外来語。拗音的話有<ruby><rb>開拗音</rb><rt>かいようおん</rt></ruby>和<ruby><rb>合拗音</rb><rt>ごうようおん</rt></ruby><br/>這2個分類。其中合拗音有くゎ・く<sub>ゐ</sub>・く<sub>ゑ</sub> 及其濁音。不過目前合拗音在現在的共同語中已経消失、全都転為其直音（例　くゎ→か）、目前在方言和古語中常見（偶遇做感動詞→「くゎッ」『<a href="https://exhentai.org/g/1252382/c118e2db2e">不屈のペロリスト</a> <sub><i>10</i></sub>』）拗音是由於受大量引入古中国語漢字的読音影響、比如説中国古字<ruby><rb>曲</rb><rt>khyuk (谿通燭三開 入声2沃)</rt></ruby>就受容成キョク了。拗音与<ruby><rb>直音</rb><rt>ちょくおん</rt></ruby>是相対的、比如<ruby><rb>きゃ</rb><rt>kya</rt></ruby>→<ruby><rb>か</rb><rt>ka</rt></ruby>、<ruby><rb>きゅ</rb><rt>kyu</rt></ruby>→<ruby><rb>く</rb><rt>ku</rt></ruby>、<ruby>きょ<rb></rb><rt>kyo</rt></ruby>→<ruby><rb>こ</rb><rt>ko</rt></ruby>。開拗音就是カサタナハマラガザバパ行的イ段仮名接捨て仮名ゃゅょ複合成而成。外来語的話列表的話我真的会哭的、所以<a href="https://ja.m.wikipedia.org/wiki/外来語">一鍵Wikipe-tan</a>。
+    <table class="mdui-table mdui-hoverable">
+		<tr> 
+			<td>きゃ</td> 
+			<td>きゅ</td> 
+			<td>きょ</td> 
+		</tr><tr> 
+			<td>しゃ</td> 
+			<td>しゅ</td> 
+			<td>しょ</td> 
+		</tr><tr> 
+			<td>ちゃ</td> 
+			<td>ちゅ</td> 
+			<td>ちょ</td> 
+		</tr><tr> 
+			<td>にゃ</td> 
+			<td>にゅ</td> 
+			<td>にょ</td>
+		</tr><tr> 
+			<td>ひゃ</td> 
+			<td>ひゅ</td> 
+			<td>ひょ</td> 
+		</tr><tr> 
+			<td>みゃ</td> 
+			<td>みゅ</td> 
+			<td>みょ</td> 
+		</tr><tr> 
+			<td>りゃ</td> 
+			<td>りゅ</td> 
+			<td>りょ</td> 
+		</tr><tr> 
+			<td>ぎゃ</td> 
+			<td>ぎゅ</td> 
+			<td>ぎょ</td> 
+		</tr><tr> 
+			<td>じゃ</td> 
+			<td>じゅ</td> 
+			<td>じょ</td> 
+		</tr><tr> 
+			<td>びゃ</td> 
+			<td>びゅ</td> 
+			<td>びょ</td> 
+		</tr><tr> 
+			<td>ぴゃ</td> 
+			<td>ぴゅ</td> 
+			<td>ぴょ</td> 
+		</tr>
+	</table>
+		<div class="mdui-text-color-black-secondary">Ⅱα TAB-03　開拗音</div> 
+<a href="#nihongo">啊啊</a> 
+					<a name="itable"></a> 
+	                    <table class="mdui-table mdui-hoverable">
+		                    <tr> 
+			                    <th>＃</th> 
+			                    <th>属性A/行</th> 
+			                    <th>属性B/行</th> 
+		                    </tr>
+		                    <tr> 
+			                    <th>組1/列</th> 
+			                    <td>本体/値a</td> 
+			                    <td>本体/値b</td> 
+		                    </tr> 
+		                    <tr> 
+			                    <th>組2/列</th> 
+			                    <td>本体/値c</td> 
+			                    <td>本体/値d</td> 
+		                    </tr> 
+        </div> 
+    </body> 
+</html> 
